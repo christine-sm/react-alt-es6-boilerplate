@@ -1,0 +1,58 @@
+{
+  "name": "todo-react",
+  "version": "1.0.0",
+  "description": "To Do List Using React and Alt",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm run babel -- -w & gulp start & gulp serve",
+    "secure": "npm run babel -- -w & gulp start & SERVER=https gulp serve",
+    "production": "BABEL_ENV=production; rm -rf dist; npm run optimizejs; gulp production; gulp prerender;",
+    "optimizejs": "npm run babel; r.js -o rjs.build.js",
+    "babel": "babel src --out-dir build",
+    "test": "eslint test/*.js; eslint src/**/*.js; mocha --colors --reporter nyan",
+    "postinstall": "bower install"
+  },
+  "keywords": [
+    "alt",
+    "react",
+    "flux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmmovius/todo-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmmovius/todo-react/issues"
+  },
+  "homepage": "https://github.com/cmmovius/todo-react#readme",
+  "dependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-plugin-transform-es2015-modules-amd": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "bower": "^1.7.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "browser-sync": "^2.11.1",
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.16.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-minify-inline": "^0.1.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.2.0",
+    "jstransformer-stylus": "^1.0.0",
+    "mocha": "^2.4.5",
+    "react-prerender": "0.1.0",
+    "requirejs": "^2.1.22",
+    "sinon": "^1.17.3"
+  }
+}

@@ -1,0 +1,12 @@
+# Ignore any generated content
+build
+dist
+_test
+_old
+_src
+
+# Ignore logs, system files, and dependencies
+node_modules
+.DS_Store
+*.log
+*.swp

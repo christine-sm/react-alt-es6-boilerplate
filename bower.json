@@ -1,0 +1,8 @@
+{
+  "name": "to-do-list-react",
+  "dependencies": {
+    "react": "~0.14.6",
+    "alt": "~0.18.1",
+    "babel-polyfill": "~0.0.1"
+  }
+}
