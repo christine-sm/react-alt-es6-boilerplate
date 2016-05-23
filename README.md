@@ -1,2 +1,7 @@
-# todo-react
-To Do List Using React and Alt
+# react-alt-es6-boilerplate
+Boilerplate for React/Alt applications.
+
+Instructions:
+- fork/clone repo
+- `npm install`
+- `npm start` for live changes to code
